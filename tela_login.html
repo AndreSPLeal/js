@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script>
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    
+
+    var maximoTentativa = 3;
+    var tentativas = 1;
+
+
+    while(tentativas <= maximoTentativa) {
+
+    	var loginInformado = prompt("Informe seu login");
+    	var senhaInformada = prompt("Informe sua senha");
+
+    	if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+        mostra("Seja Bem-vindo a plataforma ALURA.");
+    } else {
+
+        alert("Login inválido. Tente novamente");
+    }
+
+    tentativas = tentativas + 1
+
+    }
+    mostra("Seu acesso foi bloqueado, entre em contato com SAC");
+    
+    
+</script>
